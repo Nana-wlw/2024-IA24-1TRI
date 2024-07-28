@@ -1,0 +1,73 @@
+body {
+    background-color: hsl(93, 77%, 71%); /* coloca a cor para o fundo do site */
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; /* alinha os itens à esquerda */
+    height: 100vh; /* alterei para 100vh para cobrir toda a altura da viewport */
+    margin: 0; 
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* Adicionei essa propriedade para espaçar os elementos */
+    width: 100%; /* Aproveita todo o espaço horizontal */
+    padding: 20px; /* Adicionei um padding para separar os elementos da borda */
+}
+
+.aba {
+    background-color: #367230;
+    width: 300px; /* Reduzi a largura para não ocupar tanto espaço */
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; /* Adicionei um padding interno */
+}
+
+.aba .fotoassunto {
+    border-radius: 50%; /* Alterei para deixar a imagem circular */
+    width: 200px; /* Ajustei a largura da imagem */
+    height: 200px; /* Ajustei a altura da imagem */
+    margin-bottom: 10px; /* Ajustei a margem inferior */
+}
+
+.nome {
+    text-align: center; /* Centralizei o texto */
+    color: white; /* Adicionei a cor do texto */
+}
+
+.fundão {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que os filmes quebrem para uma nova linha */
+    flex-direction: column;
+    gap: 20px; /* Adicionei um espaçamento entre os filmes */
+}
+
+.filme {
+    display: flex;
+    width: 300px; /* Ajustei a largura dos filmes */
+    background-color: #f9f9f9; /* Adicionei uma cor de fundo para destacar */
+    padding: 10px; /* Adicionei um padding interno */
+    border-radius: 8px; /* Deixei os filmes com bordas arredondadas */
+}
+
+.poster img {
+    max-width: 100%; /* Garante que a imagem do poster seja responsiva */
+    height: auto;
+    border-radius: 8px; /* Deixei os posters com bordas arredondadas */
+}
+
+.sinopse {
+    flex-grow: 1; /* Ocupa todo o espaço restante ao lado do poster */
+}
+
+/* Estilo opcional para destacar a sinopse */
+.sinopse p {
+    color: #555; /* Cor do texto da sinopse */
+    font-size: 14px; /* Tamanho da fonte da sinopse */
+}
+
+.posters{
+    width: 1500px;
+}
